@@ -1,0 +1,52 @@
+[
+  {
+    "question": "What does SQL stand for?",
+    "options": ["Structured Query Language", "Simple Query Language", "System Query Logic", "Sequential Query Language"],
+    "correct": "Structured Query Language"
+  },
+  {
+    "question": "Which of the following is NOT a SQL command?",
+    "options": ["SELECT", "INSERT", "DELETE", "PRINT"],
+    "correct": "PRINT"
+  },
+  {
+    "question": "Which SQL clause is used to filter the results of a query?",
+    "options": ["ORDER BY", "GROUP BY", "WHERE", "HAVING"],
+    "correct": "WHERE"
+  },
+  {
+    "question": "How do you select all columns from a table named \"employees\"?",
+    "options": ["SELECT ALL FROM employees;", "SELECT * FROM employees;", "SELECT employees.*;", "GET ALL FROM employees;"],
+    "correct": "SELECT * FROM employees;"
+  },
+  {
+    "question": "Which function is used to find the maximum value in SQL?",
+    "options": ["MIN()", "MAX()", "UPPER()", "SUM()"],
+    "correct": "MAX()"
+  },
+  {
+    "question": "What is the purpose of the PRIMARY KEY?",
+    "options": ["To uniquely identify each record in a table", "To store duplicate values", "To create foreign key constraints", "To index a table for fast queries"],
+    "correct": "To uniquely identify each record in a table"
+  },
+  {
+    "question": "Which SQL keyword is used to sort the result-set?",
+    "options": ["SORT BY", "ORDER BY", "ARRANGE BY", "FILTER BY"],
+    "correct": "ORDER BY"
+  },
+  {
+    "question": "What is the correct syntax to insert a new record into a table?",
+    "options": ["INSERT INTO table VALUES (...)", "ADD INTO table VALUES (...)", "CREATE RECORD INTO table (...)", "INSERT NEW RECORD table (...)"],
+    "correct": "INSERT INTO table VALUES (...)"
+  },
+  {
+    "question": "Which operator checks for a NULL value?",
+    "options": ["= NULL", "IS NULL", "EQUAL NULL", "CHECK NULL"],
+    "correct": "IS NULL"
+  },
+  {
+    "question": "How do you update a column value in SQL?",
+    "options": ["MODIFY table SET column = value", "UPDATE table SET column = value", "CHANGE table SET column = value", "ALTER table SET column = value"],
+    "correct": "UPDATE table SET column = value"
+  }
+]

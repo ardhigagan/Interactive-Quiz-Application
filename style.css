@@ -1,0 +1,130 @@
+:root {
+  --bg: #ffffff;
+  --fg: #000000;
+  --card-bg: #f0f0f0;
+  --button-bg: linear-gradient(to right, #5d50fe, #22d3ee);
+
+  /* New variables for option backgrounds */
+  --option-bg: #e5e7eb;          /* Light gray for light mode */
+  --option-hover-bg: #d1d5db;    /* Slightly darker on hover */
+}
+
+body.dark-mode {
+  --bg: #131245;
+  --fg: #ffffff;
+  --card-bg: #2b2a6a;
+
+  /* Dark mode option background colors */
+  --option-bg: #3f3f76;          /* Soft indigo */
+  --option-hover-bg: #4f4f8f;    /* Brighter hover color */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+.container {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  margin-top: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: #5d50fe;
+}
+
+button {
+  margin-top: 1.5rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  background: var(--button-bg);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.question-box {
+  text-align: left;
+}
+
+.question {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+}
+
+ul.options {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+ul.options li {
+  background: var(--option-bg);
+  color: var(--fg);
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+ul.options li:hover {
+  background: var(--option-hover-bg);
+}
+
+.correct {
+  background-color: #16a34a !important;
+  color: #fff !important;
+}
+
+.wrong {
+  background-color: #dc2626 !important;
+  color: #fff !important;
+}
+
+.hidden {
+  display: none;
+}
+
+#modeSwitcher {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--button-bg);
+  color: white;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+}

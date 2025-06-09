@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Math Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button id="modeSwitcher">🌙 Dark Mode</button>
+
+
+  <div class="container start-screen" id="startScreen">
+    <h1><span class="highlight">Quiz</span> app</h1>
+    <p>Test your knowledge!</p>
+    <small>Challenge yourself with SQL problems</small>
+    <br>
+    <button onclick="startQuiz()">Let’s Get Started</button>
+  </div>
+
+  <div class="container quiz-screen hidden" id="quizScreen">
+    <div class="question-box">
+      <h3 id="questionNumber">Question</h3>
+      <p class="question" id="questionText">Loading question...</p>
+      <ul class="options" id="optionsList"></ul>
+      <button onclick="nextQuestion()">Next Question</button>
+    </div>
+  </div>
+
+  <div class="container hidden" id="resultScreen">
+    <h1>Quiz Completed!</h1>
+    <p id="scoreText">You scored 0 out of 10</p>
+    <button onclick="location.reload()">Try Again</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
